@@ -1,6 +1,6 @@
 # Parallel Graph Coloring Using MPI (C + MPI)
 
-This repository contains two MPI-based parallel graph-coloring implementations and a reproducible benchmark workflow that produces **separate computation and communication timing** (per professor feedback) and generates graphs for each dataset.
+This repository contains two MPI-based parallel graph-coloring implementations and a reproducible benchmark workflow that produces **separate computation and communication timing** and generates graphs for each dataset.
 
 ## What’s included
 
@@ -114,8 +114,3 @@ Same for Alg2:
 mpirun --oversubscribe --bind-to none -np 4 ./alg2 g1000.txt 123 colors_alg2_n1000.txt
 python3 check_coloring.py g1000.txt colors_alg2_n1000.txt
 ```
-
-## Common mistakes / fixes
-
-- If you see `open: command not found`, you are on the **lab server**. `open` is a macOS command; open PNGs on your laptop.
-- If `ls *.png` shows nothing, you probably didn’t run `python plot_local.py` in the folder that contains `results.csv`.
