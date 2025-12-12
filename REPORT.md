@@ -1,7 +1,5 @@
 # Parallel Graph Coloring Using MPI — Report Notes (Template)
 
-Use this as your short written “report” / documentation to submit with the repo and slides.
-
 ## Goal
 Implement and evaluate parallel graph coloring using MPI, and compare two strategies (Alg1 vs Alg2) while measuring **total**, **computation**, and **communication** time separately.
 
